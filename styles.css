@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Montserrat:wght@700&display=swap');
+
+:root {
+    --color-dark: #0B493D;   
+    --color-light: #60B1A1;  
+    --color-terra: #763F32;  
+    --color-bg: #FCFCFC;     
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark);
+    padding-top: 190px; 
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.header {
+   background-color: var(--color-bg);
+    padding: 25px 50px;
+    border-bottom: 4px solid var(--color-terra);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.header__logo {
+    float: left;
+    width: 100px;
+}
+
+.header__logo img {
+    width: 100%;
+    display: block;
+}
+
+.header__nav {
+    float: right;
+    margin-top: 15px; 
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 1 rem;
+    margin-left: 15px; 
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease;
+}
+
+.header__nav a:hover {
+    color: var(--color-light);
+    border-bottom: 2px solid var(--color-light);
+}
+
+.container {
+    width: 1200px; 
+    margin: 0 auto; 
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.columna-texto {
+    float: left;
+    width: 45%;
+    padding-top: 40px;
+    color: white;
+}
+
+.columna-texto h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.columna-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-primario {
+    display: inline-block;
+    background-color: var(--color-terra);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: var(--color-light);
+}
+
+.columna-imagen {
+    float: right;
+    width: 50%;
+}
+
+.columna-imagen img {
+    width: 100%;
+    border-radius: 15px; 
+    box-shadow: -15px 15px 0px var(--color-light);
+}
+
+.tabla-promos {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.tabla-promos th, .tabla-promos td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-promos th {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+
+.tabla-promos tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-promos tbody tr:hover {
+    background-color: #f1f8f6;
+}
+
+.footer {
+    background-color: var(--color-terra); 
+    color: white;
+    padding: 20px 40px;
+    overflow: hidden;
+    margin-top: 60px; 
+}
+
+.footer__izq {
+    float: left;
+}
+
+.footer__izq img {
+    width: 60px; 
+    vertical-align: middle; 
+    margin-right: 15px;
+}
+
+.footer__izq span {
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.footer__der {
+    float: right;
+    margin-top: 10px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.bg-claro {
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+}
+
+.galeria-promos {
+    float: left;
+    width: 45%;
+    overflow: hidden; 
+}
+
+.galeria-promos img {
+    float: left;
+    width: 46%; 
+    margin: 2%; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    height: 180px; 
+    object-fit: cover; 
+}
+
+.columna-tabla {
+    float: right;
+    width: 50%;
+}
+.bg-innovacion {
+    background-color: #5D2E24; 
+    color: white;
+}
+
+.float-izq {
+    float: left !important;
+}
+
+.float-der {
+    float: right !important;
+}
+
+.bg-innovacion h1, .bg-innovacion h2 {
+    color: var(--color-light); 
+}
+
+.tabla-menu {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
+}
+
+.tabla-menu tr {
+    background-color: rgba(255, 255, 255, 0.05); 
+    transition: transform 0.2s;
+}
+
+.tabla-menu tbody tr:hover{
+    background-color: var(--color-terra);
+    color:white
+}
+.bg-claro .tabla-menu tr {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.tabla-menu td {
+    padding: 20px;
+    border-top: 1px solid var(--color-terra);
+    border-bottom: 1px solid var(--color-terra);
+}
+
+.paquete-nombre {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-light);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+.paquete-descripcion {
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.fotos-duo img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.bg-innovacion .columna-texto p {
+    color: white;
+}
+
+.formulario {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-light);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid var(--color-terra);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    resize: vertical; 
+    height: 120px;
+}
+
+.btn-enviar {
+    background-color: var(--color-terra);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+.btn-enviar:hover {
+    background-color: #8C3A27; 
+}
+
+.lista-contacto {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.lista-contacto li {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.lista-contacto a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.lista-contacto a:hover {
+    color: var(--color-terra); 
+}
